@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter';
+}
+.contact-main-section{
+    width: 50%;
+    max-height: 960px;
+    margin: 156px auto 188px auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 44px;
+}
+.contact-me-h1{
+    font-size: 36px;
+    letter-spacing: -2%;
+    margin-bottom: 16px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+
+}
+.name-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+.firstname, .lastname{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+input[type=text]{
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid Gray;
+    padding: 0 10px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.email-label, .message-label{
+    font-weight: 500;
+    line-height: 24px;
+}
+input[type=email]{
+    height: 44px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid Gray;
+    padding: 0 10px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+textarea{
+    height: 132px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid Gray;
+    padding: 0 10px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+button{
+    height: 44px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color:#1570EF;
+    padding: 0 10px;
+    line-height: 24px;
+    font-weight: 600;
+    color: white;
+    margin-top: 8px;
+}
+.agreement, .contact-message{
+    line-height: 24px;
+}
+hr{
+    width: 80%;
+    margin: 100px auto 5px auto;
+  }
+  .footer-section{
+  
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .zuri-img{
+    width: 100px;
+    height: 20px;
+  }
+  .footer-section p{
+    color: gray;
+  }
+  .footer-section img{
+    width: 130x;
+    height: 32px;
+  }
+
+@media screen and (max-width:375px) {
+    .contact-main-section{
+        width: 85%;
+        margin-top: 64px;
+    }
+    .name-section{
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .firstname, .lastname{
+        width: 100%;
+        gap: 6px;
+    }
+    .footer-section{
+        flex-direction: column;
+        margin-left: 10%;
+        gap: 5px;
+    }
+    .footer-section img{
+        width: 130px;
+        height: 20px;
+    }
+}
